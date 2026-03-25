@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$TRUMP2028 — The Amendment Doesn't Apply to Orbs</title>
+<meta name="description" content="$TRUMP2028 - Solana's most unconstitutional memecoin. The 22nd Amendment doesn't apply to golden orbs. Live on Pump.fun.">
+<meta property="og:title" content="$TRUMP2028 — The Amendment Doesn't Apply to Orbs">
+<meta property="og:description" content="Solana's most unconstitutional token. Touch the orb. Ignore the Constitution.">
+<meta property="og:image" content="image(22).jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="$TRUMP2028 — The Amendment Doesn't Apply to Orbs">
+<meta name="twitter:description" content="Solana's most unconstitutional token. Touch the orb.">
+<meta name="twitter:image" content="image(22).jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟡</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:wght@700;900&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --gold: #D4A017;
+    --gold-light: #F5D547;
+    --gold-dark: #8B6914;
+    --red: #BF0A30;
+    --blue: #002868;
+    --white: #FAFAFA;
+    --black: #0A0A0A;
+  }
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
+    cursor: crosshair;
+  }
+  /* Scanline overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.03) 2px,
+      rgba(0,0,0,0.03) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(212,160,23,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse at 50% 100%, rgba(191,10,48,0.08) 0%, transparent 50%),
+      var(--black);
+  }
+  /* Animated star field */
+  .stars {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    overflow: hidden;
+  }
+  .star {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: var(--white);
+    border-radius: 50%;
+    animation: twinkle 3s infinite alternate;
+  }
+  @keyframes twinkle {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+  }
+  /* Rotating orb glow */
+  .orb-container {
+    position: relative;
+    z-index: 2;
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .orb {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:
+      0 0 60px rgba(212,160,23,0.6),
+      0 0 120px rgba(212,160,23,0.3),
+      0 0 200px rgba(212,160,23,0.15);
+    position: relative;
+  }
+  .orb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .orb-ring {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 340px; height: 340px;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(212,160,23,0.2);
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+  }
+  .orb-ring:nth-child(2) {
+    width: 400px; height: 400px;
+    animation-duration: 30s;
+    animation-direction: reverse;
+    border-style: dashed;
+  }
+  @keyframes spin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  /* Title block */
+  .title-block {
+    text-align: center;
+    z-index: 2;
+    margin-top: 40px;
+  }
+  .ticker {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.7;
+    margin-bottom: 12px;
+    animation: fadeInUp 1s 0.2s both;
+  }
+  .live-badge {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding: 4px 12px;
+    margin-bottom: 16px;
+    animation: fadeInUp 1s 0.1s both, pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(56px, 10vw, 120px);
+    line-height: 0.9;
+    background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 40%, var(--gold-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    animation: fadeInUp 1s 0.4s both;
+  }
+  .subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(14px, 2.5vw, 20px);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-top: 16px;
+    animation: fadeInUp 1s 0.6s both;
+  }
+  .amendment-note {
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    margin-top: 8px;
+    text-decoration: line-through;
+    animation: fadeInUp 1s 0.8s both;
+  }
+  .contract-address {
+    margin-top: 20px;
+    animation: fadeInUp 1s 1s both;
+  }
+  .contract-address .ca-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.5;
+    margin-bottom: 6px;
+  }
+  .contract-address .ca-value {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(9px, 1.8vw, 13px);
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid rgba(212,160,23,0.2);
+    display: inline-block;
+    transition: all 0.3s;
+    word-break: break-all;
+    max-width: 500px;
+  }
+  .contract-address .ca-value:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .contract-address .ca-value.copied {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .copy-tooltip {
+    font-size: 10px;
+    color: var(--gold);
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: 4px;
+  }
+  .copy-tooltip.show {
+    opacity: 1;
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* Scrolling marquee */
+  .marquee-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid rgba(212,160,23,0.2);
+    border-bottom: 1px solid rgba(212,160,23,0.2);
+    padding: 12px 0;
+    margin-top: 60px;
+    z-index: 2;
+  }
+  .marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.5;
+  }
+  .marquee span {
+    white-space: nowrap;
+    padding: 0 40px;
+  }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  /* Sections */
+  section {
+    padding: 80px 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.5;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: var(--white);
+  }
+  h2 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.65);
+    max-width: 600px;
+  }
+  /* The "thesis" cards */
+  .thesis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .thesis-card {
+    border: 1px solid rgba(212,160,23,0.15);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+  .thesis-card:hover {
+    border-color: var(--gold);
+  }
+  .thesis-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(212,160,23,0.03) 0%, transparent 50%);
+  }
+  .thesis-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .thesis-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+  }
+  /* Tokenomics */
+  .tokenomics {
+    border: 1px solid rgba(212,160,23,0.1);
+    padding: 48px;
+    margin-top: 40px;
+    position: relative;
+  }
+  .tokenomics::before {
+    content: 'CLASSIFIED';
+    position: absolute;
+    top: -10px; left: 32px;
+    background: var(--black);
+    padding: 0 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--red);
+  }
+  .tok-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .tok-row:last-child { border: none; }
+  .tok-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+  .tok-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .tok-value.small {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    word-break: break-all;
+    text-align: right;
+    max-width: 320px;
+  }
+  /* CTA */
+  .cta-section {
+    text-align: center;
+    padding: 120px 24px;
+  }
+  .cta-section h2 {
+    margin-bottom: 16px;
+  }
+  .cta-section p {
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  .btn-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 18px 48px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: var(--black);
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn:hover {
+    box-shadow: 0 0 40px rgba(212,160,23,0.4);
+    transform: translateY(-2px);
+  }
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+  .btn:hover::after {
+    left: 100%;
+  }
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+  }
+  .btn-secondary:hover {
+    background: rgba(212,160,23,0.1);
+  }
+  /* Disclaimer */
+  .disclaimer {
+    text-align: center;
+    padding: 40px 24px 80px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.15);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  /* Redacted text effect */
+  .redacted {
+    background: var(--white);
+    color: var(--white);
+    padding: 0 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .redacted:hover {
+    background: transparent;
+    color: var(--gold);
+  }
+  /* Glitch text */
+  .glitch {
+    position: relative;
+  }
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+  .glitch::before {
+    animation: glitch1 3s infinite;
+    color: var(--red);
+    z-index: -1;
+  }
+  .glitch::after {
+    animation: glitch2 3s infinite;
+    color: var(--blue);
+    z-index: -1;
+  }
+  @keyframes glitch1 {
+    0%, 90%, 100% { clip-path: inset(0 0 0 0); transform: none; }
+    92% { clip-path: inset(20% 0 40% 0); transform: translateX(-4px); }
+    94% { clip-path: inset(60% 0 10% 0); transform: translateX(4px); }
+  }
+  @keyframes glitch2 {
+    0%, 90%, 100% { clip-path: inset(0 0 0 0); transform: none; }
+    91% { clip-path: inset(40% 0 20% 0); transform: translateX(4px); }
+    93% { clip-path: inset(10% 0 60% 0); transform: translateX(-4px); }
+  }
+  /* Constitutional scroll */
+  .constitution-strip {
+    width: 100%;
+    padding: 60px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(212,160,23,0.1);
+    border-bottom: 1px solid rgba(212,160,23,0.1);
+  }
+  .constitution-strip blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(16px, 3vw, 24px);
+    font-style: italic;
+    color: rgba(255,255,255,0.2);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-decoration: line-through;
+    text-decoration-color: var(--red);
+  }
+  .constitution-strip cite {
+    display: block;
+    margin-top: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-style: normal;
+    color: rgba(255,255,255,0.15);
+    letter-spacing: 2px;
+  }
+  @media (max-width: 600px) {
+    .orb { width: 200px; height: 200px; }
+    .orb-ring { width: 260px; height: 260px; }
+    .orb-ring:nth-child(2) { width: 310px; height: 310px; }
+    .tokenomics { padding: 32px 24px; }
+    .tok-row { flex-direction: column; gap: 4px; }
+    .tok-value.small { text-align: left; max-width: 100%; }
+    .btn { padding: 16px 32px; font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<!-- HERO -->
+<div class="hero">
+  <div class="stars" id="stars"></div>
+  <div class="orb-container">
+    <div class="orb-ring"></div>
+    <div class="orb-ring"></div>
+    <div class="orb">
+      <img src="image(22).jpg" alt="TRUMP 2028 Golden Orb">
+    </div>
+  </div>
+  <div class="title-block">
+    <div class="live-badge">LIVE ON PUMP.FUN — MARCH 25, 2026</div>
+    <div class="ticker">Solana's Most Unconstitutional Token</div>
+    <h1 class="glitch" data-text="$TRUMP2028">$TRUMP2028</h1>
+    <div class="subtitle">The Amendment Doesn't Apply to Orbs</div>
+    <div class="amendment-note">22nd Amendment, Section 1 — "No person shall be elected to the office of the President more than twice"</div>
+    <div class="contract-address">
+      <div class="ca-label">Contract Address</div>
+      <div class="ca-value" id="ca" onclick="copyCA()">USAXkyrYJrkv6p9dQBhHoE5zVkykpUP9mStB2HCyBQR</div>
+      <div class="copy-tooltip" id="copyTooltip">Copied to clipboard!</div>
+    </div>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>THE ORB HAS SPOKEN ✦ CONSTITUTIONALLY IMPOSSIBLE ✦ FINANCIALLY IRRESPONSIBLE ✦ TECHNICALLY BULLISH ✦ THREE TERMS OR THREE BAGS ✦ 22ND AMENDMENT IS FUD ✦ ORBS DON'T READ LAWS ✦ NOT FINANCIAL ADVICE (OBVIOUSLY) ✦</span>
+      <span>THE ORB HAS SPOKEN ✦ CONSTITUTIONALLY IMPOSSIBLE ✦ FINANCIALLY IRRESPONSIBLE ✦ TECHNICALLY BULLISH ✦ THREE TERMS OR THREE BAGS ✦ 22ND AMENDMENT IS FUD ✦ ORBS DON'T READ LAWS ✦ NOT FINANCIAL ADVICE (OBVIOUSLY) ✦</span>
+    </div>
+  </div>
+</div>
+<!-- CONSTITUTION STRIP -->
+<div class="constitution-strip">
+  <blockquote>
+    "No person shall be elected to the office of the President more than twice..."
+  </blockquote>
+  <cite>— 22nd Amendment, U.S. Constitution (inapplicable to golden orbs)</cite>
+</div>
+<!-- THESIS -->
+<section>
+  <div class="section-label">Investment Thesis</div>
+  <h2>The Constitution is <em>priced in.</em></h2>
+  <p>Everyone knows he can't run again. That's the point. You're not buying a political outcome — you're buying the collective delusion of 74 million people who don't care what a piece of paper from 1951 says.</p>
+  <div class="thesis-grid">
+    <div class="thesis-card">
+      <h3>The Orb Thesis</h3>
+      <p>In May 2017, three world leaders touched a glowing orb in Riyadh. Nobody knows what it did. We believe it granted constitutional immunity. This has not been disproven.</p>
+    </div>
+    <div class="thesis-card">
+      <h3>The FUD Thesis</h3>
+      <p>The 22nd Amendment was ratified in 1951. Solana was launched in 2020. The Founding Fathers never anticipated on-chain governance. Their loss.</p>
+    </div>
+    <div class="thesis-card">
+      <h3>The Cope Thesis</h3>
+      <p>If the token goes to zero, at least you own a piece of the most ambitious constitutional crisis since <span class="redacted">Andrew Jackson ignored the Supreme Court</span>.</p>
+    </div>
+  </div>
+</section>
+<!-- TOKENOMICS -->
+<section>
+  <div class="section-label">Tokenomics</div>
+  <h2>The Numbers <em>Don't Lie</em></h2>
+  <p>They don't make sense either. But in this market, that's a feature.</p>
+  <div class="tokenomics">
+    <div class="tok-row">
+      <span class="tok-label">Total Supply</span>
+      <span class="tok-value">2,028,000,000</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Ticker</span>
+      <span class="tok-value">$TRUMP2028</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Chain</span>
+      <span class="tok-value">Solana</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Platform</span>
+      <span class="tok-value">Pump.fun</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Contract</span>
+      <span class="tok-value small">USAXkyrYJrkv6p9dQBhHoE5zVkykpUP9mStB2HCyBQR</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Launch Date</span>
+      <span class="tok-value">March 25</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Tax</span>
+      <span class="tok-value">0%</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Constitutional Legality</span>
+      <span class="tok-value">Pending</span>
+    </div>
+    <div class="tok-row">
+      <span class="tok-label">Vibes</span>
+      <span class="tok-value">Immaculate</span>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+<div class="cta-section">
+  <div class="section-label">Are You In?</div>
+  <h2>Touch the <em>Orb.</em></h2>
+  <p>You can either watch from the sidelines while the orb ascends, or you can place your hand on it and pretend the 22nd Amendment was a suggestion.</p>
+  <div class="btn-group">
+    <a href="https://pump.fun/coin/USAXkyrYJrkv6p9dQBhHoE5zVkykpUP9mStB2HCyBQR" target="_blank" rel="noopener" class="btn">Buy $TRUMP2028</a>
+    <a href="https://solscan.io/token/USAXkyrYJrkv6p9dQBhHoE5zVkykpUP9mStB2HCyBQR" target="_blank" rel="noopener" class="btn btn-secondary">View on Solscan</a>
+  </div>
+</div>
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  This is a memecoin. It has no intrinsic value, no utility, no roadmap, and absolutely no legal basis for a third presidential term. The 22nd Amendment is real and enforceable. This token will not change that. You are buying a JPEG of collective cope on a blockchain. If you invest money you can't afford to lose, that's a you problem. Not financial advice. Not legal advice. Not constitutional advice. DYOR. Touch grass. Touch the orb.
+</div>
+<script>
+  // Generate stars
+  const starsEl = document.getElementById('stars');
+  for (let i = 0; i < 80; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 3 + 's';
+    star.style.animationDuration = (2 + Math.random() * 3) + 's';
+    star.style.width = star.style.height = (1 + Math.random() * 2) + 'px';
+    starsEl.appendChild(star);
+  }
+  // Copy contract address
+  function copyCA() {
+    const ca = 'USAXkyrYJrkv6p9dQBhHoE5zVkykpUP9mStB2HCyBQR';
+    navigator.clipboard.writeText(ca).then(() => {
+      const tooltip = document.getElementById('copyTooltip');
+      const caEl = document.getElementById('ca');
+      tooltip.classList.add('show');
+      caEl.classList.add('copied');
+      setTimeout(() => {
+        tooltip.classList.remove('show');
+        caEl.classList.remove('copied');
+      }, 2000);
+    });
+  }
+  // Redacted reveal
+  document.querySelectorAll('.redacted').forEach(el => {
+    el.addEventListener('click', () => {
+      el.style.background = 'transparent';
+      el.style.color = 'var(--gold)';
+    });
+  });
+</script>
+</body>
+</html>
